@@ -1,11 +1,15 @@
 ---
 layout: page
-title: About
+title: Über uns
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Unser italienisches Feinkostgeschäft in Rosegg entstand im Mai 2010.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Eine persönliche und freundliche Bedienung liegen uns sehr am Herzen.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Diese wird von unseren Kunden besonders geschätzt. Wie überhaupt qualitativ hochwertige Produkte unsere Palette bestimmen: Vom Wurstbereich über die Käsetheke, bis hin zu Feinkostprodukten und Weinen aus vielen Regionen Italiens.
+
+Unser Angebot an Produkten wird von sich immer ändernden Themen und Schwerpunkten bestimmt, 2x wöchentlich frisches Gebäck und eine kleine Auswahl an saisonalen Obst und Gemüse runden unser Sortiment ab, so dass immer Neues und Interessantes unsere Kunden zum Genießen einlädt.
+
+Überzeugen Sie sich selbst und besuchen Sie uns einmal. Es ist immer einen Umweg wert - wir haben bestimmt auch für Ihren Geschmack das Richtige!
