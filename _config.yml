@@ -2,6 +2,28 @@
 title: Il Gusto
 name: Cipoletta Vincenzo
 phone: +43 (0) 664 - 73712148
+subtitle: Italienische Spezialitäten
+address: "Mautweg 7, 9232 Rosegg"
+opening_hours:
+  title: Öffnungszeiten
+  mo:
+    title: "Mo"
+    hours: "15:00 - 18:30"
+  di:
+    title: "Di"
+    hours: "08:30 - 13:00, 15:00 - 18:30"
+  mi:
+    title: "Mi"
+    hours: "08:30 - 13:00, 15:00 - 18:30"
+  do:
+    title: "Do"
+    hours: "08:30 - 13:00"
+  fr:
+    title: "Fr"
+    hours: "08:30 - 13:00, 15:00 - 18:30"
+  sa:
+    title: "Sa"
+    hours: "08:30 - 13:00"
 uid: ATU63006507
 email: enzomoda@aon.at
 description: > # this means to ignore newlines until "baseurl:"
