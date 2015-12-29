@@ -1,14 +1,14 @@
 # Site settings
 title: Il Gusto
-email: your-email@domain.com
+email: enzomoda@aon.at
 description: > # this means to ignore newlines until "baseurl:"
-  Italienische Spezialitäten  \\
-  Mautweg 7, 9232 Rosegg  \\
-    \\
-  Öffnungszeiten:  \\
-  MO: 15:00 - 18:30  \\
-  DI, MI, FR: 08:30 - 13:00 und 15:00 - 18:30  \\
-  DO, SA: 08:30 - 13:00  \\
+  Italienische Spezialitäten<br>
+  Mautweg 7, 9232 Rosegg<br>
+  <br>
+  Öffnungszeiten:<br>
+  MO: 15:00 - 18:30<br>
+  DI, MI, FR: 08:30 - 13:00 und 15:00 - 18:30<br>
+  DO, SA: 08:30 - 13:00<br>
 baseurl: "/il-gusto" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
