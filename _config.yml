@@ -2,13 +2,14 @@
 title: Il Gusto
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Italienische Spezialitäten\n
-  Mautweg 7, 9232 Rosegg\n
-  \n
-  Öffnungszeiten:\n
-  MO: 15:00 - 18:30\n
-  DI, MI, FR: 08:30 - 13:00 und 15:00 - 18:30\n
-  DO, SA: 08:30 - 13:00\n
+  Italienische Spezialitäten  
+  Mautweg 7, 9232 Rosegg  
+
+
+  Öffnungszeiten:  
+  MO: 15:00 - 18:30  
+  DI, MI, FR: 08:30 - 13:00 und 15:00 - 18:30  
+  DO, SA: 08:30 - 13:00  
 baseurl: "/il-gusto" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
