@@ -3,7 +3,7 @@
  */
 .site-header {
     // border-top: 5px solid $grey-color-dark;
-    border-bottom: 5px solid red; //$grey-color-light;
+    //border-bottom: 5px solid red; //$grey-color-light;
     margin: 0;
     padding: 0;
     width: auto;
@@ -34,7 +34,7 @@
   padding: 10px;
   z-index: 2;
   min-width: 90%;
-  min-height: 90%;
+  min-height: 70%;
   width: auto;
   //height: auto;
   //flex stuff:
@@ -46,7 +46,7 @@
 }
 
 .flexbox-item:nth-child(2) {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .overlay-text {
