@@ -4,51 +4,59 @@
 
     <h2 class="footer-heading">{{ site.title }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-3">
-        <ul class="contact-list">
-          <li>
-            {{ site.subtitle }}
-          </li>
-          <li>
-            <a href="https://www.google.at/maps/place/Il+Gusto/@46.5922111,14.0174463,17z/data=!4m7!1m4!3m3!1s0x477078af0747afeb:0x83a247888773d752!2sMautweg+7,+9232+Rosegg!3b1!3m1!1s0x477078af06f0728f:0x8452d9ac2dc6edc9?hl=en">
-              <i class="fa fa-map-o"></i>
-              {{ site.address }}
-            </a>
-          </li>
-          <li>{{ site.uid }}</li>
-        </ul>
+    <div class="footer-flexbox-parent">
+      <div class="footer-flexbox-item">
+        <div class="footer-col1">
+          <ul class="contact-list">
+            <li>
+              {{ site.subtitle }}
+            </li>
+            <li>
+              <a href="https://www.google.at/maps/place/Il+Gusto/@46.5922111,14.0174463,17z/data=!4m7!1m4!3m3!1s0x477078af0747afeb:0x83a247888773d752!2sMautweg+7,+9232+Rosegg!3b1!3m1!1s0x477078af06f0728f:0x8452d9ac2dc6edc9?hl=en">
+                <i class="fa fa-map-o"></i>
+                {{ site.address }}
+              </a>
+            </li>
+            <li>{{ site.uid }}</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <ul class="contact-list">
-          <li>
-            {{ site.name }}
-          </li>
-          <li>
-            <a href="tel:{{ site.phone }}"><i class="fa fa-phone"></i> {{ site.phone }}</a>
-          </li>
-          <li>
-            <a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i> {{ site.email }}</a>
-          </li>
-          <li>
-            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-              <i class="fa fa-rss-square"></i> RSS-Feed
-            </a>
-          </li>
-        </ul>
+
+      <div class="footer-flexbox-item">
+        <div class="footer-col-2">
+          <ul class="contact-list">
+            <li>
+              {{ site.name }}
+            </li>
+            <li>
+              <a href="tel:{{ site.phone }}"><i class="fa fa-phone"></i> {{ site.phone }}</a>
+            </li>
+            <li>
+              <a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i> {{ site.email }}</a>
+            </li>
+            <li>
+              <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                <i class="fa fa-rss-square"></i> RSS-Feed
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <ul class="contact-list">
-          <li>{{ site.opening_hours.title }}</li>
-          <li>{{ site.opening_hours.mo.title }} : {{ site.opening_hours.mo.hours }} </li>
-          <li>{{ site.opening_hours.di.title }} : {{ site.opening_hours.di.hours }} </li>
-          <li>{{ site.opening_hours.mi.title }} : {{ site.opening_hours.mi.hours }} </li>
-          <li>{{ site.opening_hours.do.title }} : {{ site.opening_hours.do.hours }} </li>
-          <li>{{ site.opening_hours.fr.title }} : {{ site.opening_hours.fr.hours }} </li>
-          <li>{{ site.opening_hours.sa.title }} : {{ site.opening_hours.sa.hours }} </li>
-        </ul>
+
+      <div class="footer-flexbox-item">
+        <div class="footer-col-3">
+          <ul class="contact-list">
+            <li>{{ site.opening_hours.title }}</li>
+            <li>{{ site.opening_hours.mo.title }} : {{ site.opening_hours.mo.hours }} </li>
+            <li>{{ site.opening_hours.di.title }} : {{ site.opening_hours.di.hours }} </li>
+            <li>{{ site.opening_hours.mi.title }} : {{ site.opening_hours.mi.hours }} </li>
+            <li>{{ site.opening_hours.do.title }} : {{ site.opening_hours.do.hours }} </li>
+            <li>{{ site.opening_hours.fr.title }} : {{ site.opening_hours.fr.hours }} </li>
+            <li>{{ site.opening_hours.sa.title }} : {{ site.opening_hours.sa.hours }} </li>
+          </ul>
+        </div>
       </div>
 
     </div>

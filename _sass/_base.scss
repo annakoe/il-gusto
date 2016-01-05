@@ -98,7 +98,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $hover-color;
         text-decoration: underline;
     }
 }
@@ -166,7 +166,7 @@ pre {
     margin-right: auto;
     margin-left: 0;
     padding-right: $spacing-unit;
-    padding_left: 0;
+    padding-left: 0;
 
     @extend %clearfix;
 

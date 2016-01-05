@@ -1,0 +1,34 @@
+<div id="landing_page">
+
+  <video class="landing-video" poster="images/enzo.png" autoplay="true" muted>
+    <source src="videos/Landing_video_short.mp4" type="video/mp4">
+    <source src="videos/Landing_video_short.webm" type="video/webm">
+  </video>
+
+  <div class="video-flexbox-parent">
+
+    <div class="video-flexbox-item">
+      <div class="overlay-text">
+        <ul class="overlay-text-list">
+          <li>{{ site.opening_hours.title }}</li>
+          <li>{{ site.opening_hours.mo.title }} : {{ site.opening_hours.mo.hours }} </li>
+          <li>{{ site.opening_hours.di.title }} : {{ site.opening_hours.di.hours }} </li>
+          <li>{{ site.opening_hours.mi.title }} : {{ site.opening_hours.mi.hours }} </li>
+          <li>{{ site.opening_hours.do.title }} : {{ site.opening_hours.do.hours }} </li>
+          <li>{{ site.opening_hours.fr.title }} : {{ site.opening_hours.fr.hours }} </li>
+          <li>{{ site.opening_hours.sa.title }} : {{ site.opening_hours.sa.hours }} </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="chevron-flexbox-parent">
+    <div class="chevron-flexbox-item">
+      <div class "double-angle-down">
+        <a href="#ueberuns"><i class="fa fa-angle-double-down" style="font-size:48px"></i></a>
+      </div>
+    </div>
+  </div>
+
+</div>
