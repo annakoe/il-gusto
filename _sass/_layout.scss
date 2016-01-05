@@ -101,7 +101,7 @@
  * Landing_page
  */
 
-.landing_page{
+#landing_page{
   margin: 0;
   padding: 0;
   width: auto;
@@ -181,10 +181,9 @@
 .chevron-flexbox-parent {
   //border: 5px solid lightgreen;
   position: absolute;
-  margin-top: 580px;
-  margin-left: 20px;
-  padding: 15px;
+  bottom: 0;
   width: 90%;
+  padding: 15px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -217,17 +216,48 @@
 
 }
 
+/**
+ * Ueber uns
+ */
 
+ #ueberuns{
+   margin: 0;
+   padding: 0;
+   width: auto;
+   height: 100vh;
+}
 
+.uns-flexbox-parent {
+  //border: 5px solid green;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  //margin: 0 auto;
+  //z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
+}
+
+.uns-flexbox-item {
+  width: 250px;
+  font-size: 16px;
+  margin: 10px;
+
+}
 
 /**
  * Site footer
  */
 
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $green-color;
     padding: $spacing-unit 0;
+    background: $grey-color-light;
 }
 
 .footer-heading {
@@ -243,29 +273,30 @@
 }
 
 .footer-flexbox-parent {
-  border: 5px solid green;
+  //border: 5px solid green;
   margin-left: 20px;
-
   max-width: 900px;
   margin: 0 auto;
   //z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
   flex-wrap: wrap;
 
 }
 
-.footer-flexbox-parent {
-  padding: 20px;
+.footer-flexbox-item {
+  margin: 10px;
 
 }
 
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    .footer-flexbox-parent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
     }
 }
 
