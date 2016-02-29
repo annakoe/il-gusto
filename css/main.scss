@@ -7,7 +7,7 @@
 
 // Our variables
 $base-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-$base-font-size:   20px;
+$base-font-size:   24px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -20,7 +20,7 @@ $hover-color:      rgba(200,200,200,0.8);
 $green-color:      rgba(45,163,66,1);
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 25%);
 $navbarcolor:      rgba(0,0,0,1);
 
