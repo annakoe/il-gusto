@@ -33,6 +33,9 @@
   width: 300px;
 
 }
+.mobile-nav{
+  visibility: hidden;
+}
 
 .site-nav {
     position: relative;
@@ -55,6 +58,102 @@
     }
 }
 
+//@include media-query($on-palm)
+@media screen and (max-width: $on-palm) {
+
+  .site-header {
+    //border: 1px solid green;
+    width: 100vw;
+  }
+
+  .header-flexbox-parent{
+    //border: 1px solid red;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-flexbox-item {
+    //border: 1px solid purple;
+  }
+  .header-logo {
+      width: 220px;
+      margin-left: 0;
+      padding-left: 0;
+      margin-right: auto;
+
+    }
+
+  .mobile-nav{
+    visibility: visible;
+    //border: 2px solid green;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+  }
+
+  .mobile-nav-flexbox-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+
+  }
+
+  .mobile-nav-flexbox-item{
+    background-color: $grey-color-dark;
+    border: 1px solid white;
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+
+  }
+  .site-nav {
+    visibility: hidden;
+    //position: left;
+    //top: 9px;
+    //right: 30px;
+    //background-color: $background-color;
+    //border: 1px solid white;
+    border-radius: 5px;
+    text-align: right;
+
+      .menu-icon {
+          display: block;
+          float: right;
+          width: 72px;
+          height: 52px;
+          line-height: 0;
+          padding-top: 10px;
+          text-align: right;
+
+          > svg {
+              width: 30px;
+              height: 25px;
+
+              path {
+                  fill: $navbarcolor;
+              }
+          }
+      }
+
+      .trigger {
+          clear: both;
+          display: none;
+      }
+
+      &:hover .trigger {
+          display: block;
+          padding-bottom: 5px;
+      }
+
+      .page-link {
+          display: block;
+          padding: 5px 10px;
+      }
+  }
+
+}
 
 /**
  * Landing_page
@@ -105,70 +204,6 @@
   flex-wrap: wrap;
 }
 
-//@include media-query($on-palm)
-@media screen and (max-width: $on-palm) {
-
-  .header-flexbox-parent {
-    max-width: 300px;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .header-logo {
-      width: 180px;
-
-    }
-
-  .site-nav {
-    position: left;
-    //top: 9px;
-    //right: 30px;
-    //background-color: $background-color;
-    //border: 1px solid white;
-    border-radius: 5px;
-    text-align: right;
-
-      .menu-icon {
-          display: block;
-          float: right;
-          width: 72px;
-          height: 52px;
-          line-height: 0;
-          padding-top: 10px;
-          text-align: right;
-
-          > svg {
-              width: 30px;
-              height: 25px;
-
-              path {
-                  fill: $navbarcolor;
-              }
-          }
-      }
-
-      .trigger {
-          clear: both;
-          display: none;
-      }
-
-      &:hover .trigger {
-          display: block;
-          padding-bottom: 5px;
-      }
-
-      .page-link {
-          display: block;
-          padding: 5px 10px;
-      }
-  }
-
-}
-
-
 .video-flexbox-parent {
   //border: 5px solid lightgreen;
   position: absolute;
@@ -209,16 +244,20 @@
 }
 
 .background-mobile {
-  display: none;
+  visibility: hidden;
 }
 
 // when the screen becomes mobilephonesize, do this:
 @media screen and (max-width: $on-palm) {
+  #landing_page{
+    width: 100vw;
+    height: auto;
+  }
+
   .video-flexbox-parent {
     //border: 5px solid red;
     position: absolute;
     margin-top: 200px;
-
   }
 
   .landing-video{
@@ -227,35 +266,35 @@
 
   .video-flexbox-item:nth-child(1) {
     align-self: center;
-
     margin-left: 0;
     padding-left: 0;
-
   }
 
   .background-mobile {
+    visibility: visible;
+    //border: 2px solid blue;
+  }
+
+  .background-mobile-image {
+    visibility: visible;
+    height: auto;
+    width: auto;
+  }
+
+  .chevron-flexbox-parent {
+    //border: 1px solid lightgreen;
+    position: relative;
+    background-color: rgba(250,250,250,0.7);
+    bottom: 0;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    z-index: 2;
     display: flex;
-    z-index: 1;
-  }
-
-  .bottom-image {
-    position: absolute;
-    margin-top: 80px;
-    z-index: 1;
-  }
-
-  .top-image1 {
-    position: absolute;
-    margin-top: 80px;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .top-image2 {
-    position: absolute;
-    margin-top: 80px;
-    width: 100%;
-    z-index: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 }
@@ -305,7 +344,12 @@
 .overlay-text-list {
   list-style: none;
 }
-
+@media screen and (max-width: $on-palm) {
+  #oeffnungszeiten{
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+}
 
 /**
  * Ueber uns
