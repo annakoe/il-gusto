@@ -67,7 +67,7 @@
 
   .mobile-nav{
     visibility: visible;
-    //border: 2px solid green;
+    border: 2px solid green;
     position: fixed;
     bottom: 0;
     z-index: 3;
@@ -75,6 +75,7 @@
   }
 
   .mobile-nav-flexbox-parent{
+    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     align-items: center
@@ -85,8 +86,11 @@
     background-color: $grey-color-dark;
     border: 1px solid $grey-color-light;
     flex-grow: 1;
+    flex-shrink: 1;
     text-align: center;
-    padding: 5px;
+    padding: 1vw;
+    font-size: 18px;
+    font-size: 6vw;
 
   }
   .site-nav {
@@ -236,7 +240,7 @@
   }
 
   .video-flexbox-parent {
-    //border: 5px solid red;
+    border: 5px solid red;
     position: absolute;
     margin-top: 200px;
   }
@@ -253,7 +257,7 @@
 
   .background-mobile {
     visibility: visible;
-    //border: 2px solid blue;
+    border: 2px solid blue;
   }
 
   .background-mobile-image {
@@ -263,7 +267,7 @@
   }
 
   .chevron-flexbox-parent {
-    //border: 1px solid lightgreen;
+    border: 1px solid lightgreen;
     position: relative;
     background-color: rgba(250,250,250,1);
     bottom: 0;
@@ -330,11 +334,17 @@
 
 @media screen and (max-width: $on-palm) {
   #oeffnungszeiten{
+    border: 1px solid purple;
     padding-top: 0;
     padding-bottom: 10px;
   }
   .overlay-text {
     width: 340px;
+  }
+  .overlay-text-list {
+    font-size: 20px;
+    font-size: 4vw;
+    list-style: none;
   }
 }
 
@@ -401,11 +411,12 @@
 // when the screen becomes mobilephonesize, do this:
 @media screen and (max-width: $on-palm) {
   #ueberuns{
+    border: 1px solid green;
     height: auto;
   }
 
   .uns-flexbox-parent {
-    //border: 5px solid red;
+    border: 1px solid red;
   }
 
   .round-picture {
