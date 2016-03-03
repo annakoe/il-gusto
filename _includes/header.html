@@ -23,12 +23,11 @@
               <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
               {% endif %}
             {% endfor %} -->
-            <a class="page-link" href="#landing_page"> Home</a>
             <a class="page-link" href="#oeffnungszeiten"> Öffnungszeiten</a>
             <a class="page-link" href="#ueberuns"> Über uns</a>
             <a class="page-link" href="#kontakt"> Anfahrt</a>
             <a class="page-link" href="#kontakt"> Kontakt</a>
-          </div>
+            <a class="page-link" href="http://www.facebook.com/il.gusto.rosegg"><i class="fa fa-facebook-official"></i></a>
         </nav>
       </div>
     </div>
@@ -39,23 +38,29 @@
       <div class="mobile-nav-flexbox-parent">
 
         <div class="mobile-nav-flexbox-item">
-          <a class ="mobile-nav-anfahrt" href="#kontakt"> <i class="fa fa-map-marker"></i>
+          <a class = "mobile-nav-link" href="http://www.facebook.com/il.gusto.rosegg"><i class="fa fa-facebook-official"></i>
+					       <span class="mobile-nav-text"><br></span>
+          </a>
+       </div>
+
+        <div class="mobile-nav-flexbox-item">
+          <a class ="mobile-nav-link" href="#kontakt"> <i class="fa fa-map-marker"></i>
 					  <span class="mobile-nav-text"><br>Anfahrt</span>
 			    </a>
         </div>
 
         <div class="mobile-nav-flexbox-item">
-            <a class="mobile-nav-opening" href="#oeffnungszeiten"> <i class="fa fa-shopping-basket "></i>
+            <a class="mobile-nav-link" href="#oeffnungszeiten"> <i class="fa fa-shopping-basket "></i>
               <span class="mobile-nav-text"><br>Öffnungs-<br>zeiten</span>
             </a>
         </div>
 
         <div class="mobile-nav-flexbox-item">
-          <a class = "mobile-nav-phone" href="tel:{{ site.phone }}"><i class="fa fa-phone"></i>
+          <a class = "mobile-nav-link" href="tel:{{ site.phone }}"><i class="fa fa-phone"></i>
 					       <span class="mobile-nav-text"><br>Anruf</span>
 			    </a>
         </div>
-      </div>
+
     </div>
 
 </header>
