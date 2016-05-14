@@ -1,6 +1,6 @@
 <footer class="site-footer">
 
-  <div class="wrapper" id="kontakt">
+  <div class="footer-box" id="kontakt">
 
     <div class="footer-flexbox-parent">
 
@@ -42,25 +42,26 @@
 
       <div class="footer-flexbox-item">
         <div class="footer-col-2">
-          <ul class="contact-list">
-            <li>{{ site.opening_hours.title }}</li>
-            <li>{{ site.opening_hours.mo.title }} : {{ site.opening_hours.mo.hours }} </li>
-            <li>{{ site.opening_hours.di.title }} : {{ site.opening_hours.di.hours }} </li>
-            <li>{{ site.opening_hours.mi.title }} : {{ site.opening_hours.mi.hours }} </li>
-            <li>{{ site.opening_hours.do.title }} : {{ site.opening_hours.do.hours }} </li>
-            <li>{{ site.opening_hours.fr.title }} : {{ site.opening_hours.fr.hours }} </li>
-            <li>{{ site.opening_hours.sa.title }} : {{ site.opening_hours.sa.hours }} </li>
-          </ul>
+          <table class="contact-list">
+            <tr>{{ site.opening_hours.title }} </tr>
+            <tr><td>{{ site.opening_hours.mo.title }}:</td><td>{{ site.opening_hours.mo.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.di.title }}:</td><td>{{ site.opening_hours.di.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.mi.title }}:</td><td>{{ site.opening_hours.mi.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.do.title }}:</td><td>{{ site.opening_hours.do.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.fr.title }}:</td><td>{{ site.opening_hours.fr.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.sa.title }}:</td><td>{{ site.opening_hours.sa.hours }}</td> </tr>
+          </table>
         </div>
       </div>
 
     </div>
-  </div>
 
-  <div class="map_image_container">
-    <a href="https://www.google.at/maps/place/Il+Gusto/@46.5922111,14.0174463,17z/data=!4m7!1m4!3m3!1s0x477078af0747afeb:0x83a247888773d752!2sMautweg+7,+9232+Rosegg!3b1!3m1!1s0x477078af06f0728f:0x8452d9ac2dc6edc9?hl=en">
-      <img class="map_image" src="images/map_long.png">
-    </a>
+    <div class="map_image_container">
+      <a href="https://www.google.at/maps/place/Il+Gusto/@46.5922111,14.0174463,17z/data=!4m7!1m4!3m3!1s0x477078af0747afeb:0x83a247888773d752!2sMautweg+7,+9232+Rosegg!3b1!3m1!1s0x477078af06f0728f:0x8452d9ac2dc6edc9?hl=en">
+        <img class="map_image" src="images/map_long.png">
+      </a>
+    </div>
+
   </div>
 
   <div class="impressum-wrapper">

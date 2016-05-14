@@ -4,15 +4,15 @@
     <div class="oeffnungszeiten-flexbox-parent">
 
       <div class="oeffnungszeiten-flexbox-item">
-          <ul class="overlay-text-list">
-            <li>{{ site.opening_hours.title }}</li>
-            <li>{{ site.opening_hours.mo.title }} : {{ site.opening_hours.mo.hours }} </li>
-            <li>{{ site.opening_hours.di.title }} : {{ site.opening_hours.di.hours }} </li>
-            <li>{{ site.opening_hours.mi.title }} : {{ site.opening_hours.mi.hours }} </li>
-            <li>{{ site.opening_hours.do.title }} : {{ site.opening_hours.do.hours }} </li>
-            <li>{{ site.opening_hours.fr.title }} : {{ site.opening_hours.fr.hours }} </li>
-            <li>{{ site.opening_hours.sa.title }} : {{ site.opening_hours.sa.hours }} </li>
-          </ul>
+          <table class="overlay-text-list">
+            <tr>{{ site.opening_hours.title }}  </tr>
+            <tr><td>{{ site.opening_hours.mo.title }}: </td> <td>{{ site.opening_hours.mo.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.di.title }}: </td> <td>{{ site.opening_hours.di.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.mi.title }}: </td> <td>{{ site.opening_hours.mi.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.do.title }}: </td> <td>{{ site.opening_hours.do.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.fr.title }}: </td> <td>{{ site.opening_hours.fr.hours }}</td> </tr>
+            <tr><td>{{ site.opening_hours.sa.title }}: </td> <td>{{ site.opening_hours.sa.hours }}</td> </tr>
+          </table>
       </div>
     </div>
 
